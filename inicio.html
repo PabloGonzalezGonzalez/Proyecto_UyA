@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Inicio de sesión</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+  	<link rel="shortcut icon" href="https://www.ull.es/wp-content/themes/base-ull/assets/images/favicon/favicon.ico">
+</head>
+<body>
+
+		<!-- Cabecera -->
+		<nav class="navbar-fixed" role="navigation" aria-label="main-menu">
+		    <div class="nav-wrapper">
+		      	<div><a href="index.html" class="brand-logo">Cafeterías ULL</a></div>
+		    </div>
+	  </nav>
+
+		<!-- Breadcrumbs -->
+		<nav role="navigation" aria-label="breadcrumbs">
+    		<div class="nav-wrapper">
+      			<div class="col s12">
+        			<a href="index.html" class="breadcrumb">Inicio</a>
+        			<a href="inicio.html" class="breadcrumb">Inicio sesión</a>
+      			</div>
+    		</div>
+  		</nav>
+		<!-- Breadcrumbs -->
+		
+
+		<div class="container" role="main">
+
+		<!-- Formulario de registro -->
+		
+		<div class="row" role="form">
+	      	<div class="col s6 offset-s3">
+	      	<form action="php/login.php" method="post" class="formulario1 color-ull-2">
+    			<h5>Inicio de sesión</h5><hr />
+	      		<div class="row">
+			        <div class="input-field col s12">
+			          <input id="mail" type="email" class="validate" name="mail" aria-required="true">
+			          <label for="mail">Nombre de usuario</label>
+			        </div>
+			        <div class="input-field col s12">
+			          <input id="pw" type="password" class="validate" data-length="20" name="pw" aria-required="true">
+			          <label for="pw">Contraseña</label>
+			        </div>
+			    </div>
+			    <!--onclick="gotoprin()"-->
+	      		<button class="btn waves-effect waves-light color-ull" type="submit" name="_iniciar">Inicia sesión
+				    <i class="material-icons right">send</i>
+				</button>
+				<br><br>
+				<div>
+					<a id="regis" href="registro.html">¿No estás registrado? Pulsa aquí para hacerlo</a>
+				</div>
+	      	</form>
+	      	</div>
+  		</div>
+  		
+  		</div>
+
+		<!-- Formulario de registro -->
+
+		<!-- Footer -->
+	  	<footer class="page-footer" role="contentinfo">
+          	<div class="container">
+            	<div class="row">
+              		<div class="col l6 s12">
+                		<h5 class="white-text">Información adicional</h5>
+                		<p class="grey-text text-lighten-4">
+                    Ésta página fue ideada en principio como una trabajo de Usabilidad y Accesibilidad. En el caso de que se quiera mejorar en el futuro, ya tomaremos cartas en el asunto.
+                    </p>
+              		</div>
+              		<div class="col l4 offset-l2 s12">
+                		<h5 class="white-text">Links de interés</h5>
+                		<ul>
+                			<li><a class="grey-text text-lighten-3" href="https://www.ull.es" target="_blank"> · Universidad de la Laguna</a></li>
+                      		<li><a class="grey-text text-lighten-3" href="https://www.ull.es/grados/ingenieria-informatica/" target="_blank"> · Ingeniería Informática</a></li>
+                		</ul>
+              		</div>
+            	</div>
+          	</div>
+          	<div class="footer-copyright">
+            	<div class="container">
+            		© 2018 Copyright - Grupo 10 (Usabilidad y Accesibilidad)
+                <a class="grey-text text-lighten-4 right" href="http://www.mapama.gob.es/es/" target="_blank">Ministerio de Alimentación</a>
+            	</div>
+          	</div>
+        </footer>
+		<!-- Footer -->
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+      	<!--<script type="text/javascript" src="js_/funciones.js"></script>-->
+
+
+</body>
+</html>

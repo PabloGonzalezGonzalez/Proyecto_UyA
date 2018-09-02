@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Cafeterías ULL: Física y Matemáticas</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+  <link rel="import" href="https://raw-dot-custom-elements.appspot.com/GoogleWebComponents/google-map/v2.0.4/google-map/google-map.html">
+  <link rel="shortcut icon" href="https://www.ull.es/wp-content/themes/base-ull/assets/images/favicon/favicon.ico">
+
+</head>
+<body>
+
+	<div class="container">
+
+		<nav class="navbar-fixed" role="navigation" aria-label="main-menu">
+		    <div class="nav-wrapper">
+		      	<div><a href="principal.html" class="brand-logo">Cafeterías ULL</a></div>
+		      	<ul class="right" role="menu">
+		        	<li role="none"><a role="menuitem" href="cafeterias.html"><i class="material-icons left">view_module</i>Cafeterias</a></li>
+		        	<li role="none"><a role="menuitem" href="foro.php"><i class="material-icons left">chat_bubble_outline</i>Foro</a></li>
+		        	<li role="none"><a role="menuitem" href="contacto.html"><i class="material-icons left">email</i>Contacto</a></li>
+		        	<li role="none"><a role="menuitem" href="index.html"><i class="material-icons left">account_circle</i>Cerrar sesión</a></li>
+		      	</ul>
+		    </div>
+	  </nav>
+
+    <!-- Breadcrums -->
+    <nav role="navigation" aria-label="breadcrumbs">
+      <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="principal.html" class="breadcrumb">Inicio</a>
+            <a href="cafeterias.html" class="breadcrumb">Cafeterías</a>
+            <a href="cafe-fisica.html" class="breadcrumb">Fis. y Mat.</a>
+          </div>
+      </div>
+    </nav>
+
+      <div>
+      <h4>Cafetería de Física y Matemáticas</h4><hr />
+      </div>
+
+      <ul class="collapsible popout" role="main" aria-label="información">
+        <li>
+          <div class="collapsible-header waves-effect waves-ull" role="button" tabindex="0" 
+          aria-pressed="false" onclick="handleBtnClick(event)" onKeyPress="handleBtnKeyPress(event)"><i class="material-icons">access_time</i>Horario</div>
+          <div class="collapsible-body"><p>
+            Días laborables: 8:00 - 20:00<br>
+            Fines de semana / festivos: Cerrado            
+          </p></div>
+        </li>
+        <li>
+          <div class="collapsible-header waves-effect waves-ull" role="button" tabindex="0" 
+          aria-pressed="false" onclick="handleBtnClick(event)" onKeyPress="handleBtnKeyPress(event)"><i class="material-icons">place</i>Ubicación</div>
+          <div class="collapsible-body">
+
+            <style>
+              google-map {
+                height: 500px;
+
+              }
+            </style>
+            <google-map fit-to-markers api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc" latitude="28.281889280533406" longitude="-16.53368667441407">
+              <google-map-marker latitude="28.481803778594735" longitude="-16.32093172520399"></google-map-marker>
+            </google-map>
+
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header waves-effect waves-ull" role="button" tabindex="0" 
+          aria-pressed="false" onclick="handleBtnClick(event)" onKeyPress="handleBtnKeyPress(event)"><i class="material-icons">local_dining</i>Menú</div>
+          <div class="collapsible-body">
+          
+            <table class="centered striped responsive-table">
+              <thead>
+                <tr>
+                    <th>Bocadillos</th>
+                    <th>Sándwichs</th>
+                    <th>Croissants</th>
+                    <th>Bebidas</th>
+                    <th>Bebidas calientes</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Mixto</td>
+                  <td>Mixto</td>
+                  <td>Mixto</td>
+                  <td>Coca Cola</td>
+                  <td>Café</td>
+                </tr>
+                <tr>
+                  <td>Pollo</td>
+                  <td>Pollo</td>
+                  <td>Pollo</td>
+                  <td>Fanta</td>
+                  <td>Descafeinado</td>
+                </tr>
+                <tr>
+                  <td>Mechada</td>
+                  <td>Mechada</td>
+                  <td>Mechada</td>
+                  <td>7up!</td>
+                  <td>Chocolate</td>
+                </tr>
+                <tr>
+                  <td>Vegetal</td>
+                  <td>Atún</td>
+                  <td>Tropical</td>
+                  <td>Nestea</td>
+                  <td>Té</td>
+                </tr>
+                <tr>
+                  <td>Tropical</td>
+                  <td>Vegetal</td>
+                  <td>Vegetal</td>
+                  <td>Acuarius</td>
+                  <td>Leche</td>
+                </tr>
+                <tr>
+                  <td>Queso blanco</td>
+                  <td>Americano</td>
+                  <td>Nocilla</td>
+                  <td>Agua</td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>Pata</td>
+                  <td> </td>
+                  <td> </td>
+                  <td>Cerveza</td>
+                  <td> </td>
+                </tr>
+              </tbody>
+            </table>
+             
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header waves-effect waves-ull" role="button" tabindex="0" 
+          aria-pressed="false" onclick="handleBtnClick(event)" onKeyPress="handleBtnKeyPress(event)"><i class="material-icons">today</i>Comida del día</div>
+          <div class="collapsible-body">
+          
+              <table class="container striped responsive-table">
+                  <tbody>
+                    <tr>
+                      <th>Primer plato:</th>
+                      <td>Potaje</td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <th>Segundo plato:</th>
+                      <td>Pechuga de pollo empanada</td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <th>Postre:</th>
+                      <td>Sandía o Melón</td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <th>Precio:</th>
+                      <td>7'50€</td>
+                      <td> </td>
+                    </tr>
+                  </tbody>
+                </table>
+          
+          </div>
+        </li>
+      </ul>
+
+	  	<footer class="page-footer" role="contentinfo">
+          	<div class="container">
+            	<div class="row">
+              		<div class="col l6 s12">
+                		<h5 class="white-text">Información adicional</h5>
+                		<p class="grey-text text-lighten-4">
+                    Ésta página fue ideada en principio como una trabajo de Usabilidad y Accesibilidad. En el caso de que se quiera mejorar en el futuro, ya tomaremos cartas en el asunto.
+                    </p>
+              		</div>
+              		<div class="col l4 offset-l2 s12">
+                		<h5 class="white-text">Links de interés</h5>
+                		<ul>
+                			<li><a class="grey-text text-lighten-3" href="https://www.ull.es" target="_blank"> · Universidad de la Laguna</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://www.ull.es/grados/ingenieria-informatica/" target="_blank"> · Ingeniería Informática</a></li>
+                		</ul>
+              		</div>
+            	</div>
+          	</div>
+          	<div class="footer-copyright">
+            	<div class="container">
+            		© 2018 Copyright - Grupo 10 (Usabilidad y Accesibilidad)
+                <a class="grey-text text-lighten-4 right" href="http://www.mapama.gob.es/es/" target="_blank">Ministerio de Alimentación</a>
+            	</div>
+          	</div>
+        </footer>
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.2.0/webcomponents-lite.js.map"></script>
+        <script type="text/javascript" src="js_/funciones.js"></script>
+
+	</div>
+
+</body>
+</html>

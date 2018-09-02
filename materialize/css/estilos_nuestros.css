@@ -1,0 +1,25 @@
+.fset{
+  background-color: rgba(122, 59, 122, 0.2) !important;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(122, 59, 122);
+}
+
+.legnd{
+  background-color: rgb(122, 59, 122) !important;
+  color: white;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(122, 59, 122);
+  padding: 2px;
+}
+
+.formulario2 {
+  border: 3px solid #7A3B7A;
+  margin: 10px;
+  padding: 20px;
+}
