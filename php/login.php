@@ -18,7 +18,7 @@
      	
     if($Result->num_rows > 0){
         
-        echo "<script>location.href='principal.html'</script>";
+        echo "<script>location.href='../principal.html'</script>";
     }
     
     else{
